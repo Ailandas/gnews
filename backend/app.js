@@ -32,8 +32,6 @@ app.get('/getTopHeadlines',cache(300), (req, res) => {
   app.post('/UserAction', (req, res) => {
     
     var r = PostMethod.Post(req.body);
-
-    console.log(req.body);
     if(r==true){
       res.send(200);
     }else{
@@ -45,5 +43,5 @@ app.get('/getTopHeadlines',cache(300), (req, res) => {
      });
   
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  
 })

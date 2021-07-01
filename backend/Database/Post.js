@@ -11,7 +11,6 @@ function UserActionPost(entry){
     mongoose.connection.collection('userActions').insertOne(userAction).then((m) =>{
         mongoose.connection.close();
     });
-    console.log('posted');
   return true;
   } catch{
     return false;
