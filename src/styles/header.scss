@@ -1,0 +1,19 @@
+.GNewsLogo{
+    max-width:100%;
+    max-height:100%;
+}
+.errorLabel{
+    position:relative;
+    margin-bottom: 20px;
+    color:red;
+    text-align: left;
+}
+.formContainer{
+    padding-top:50px;
+}
+
+@media screen and (max-width: 450px) {
+    .errorLabel {
+        text-align: center;
+    }
+  }
