@@ -31,12 +31,8 @@ app.get('/getTopHeadlines',cache(300), (req, res) => {
 
   app.post('/UserAction', (req, res) => {
     
-    var r = PostMethod.Post(req.body);
-    if(r==true){
-      res.send(200);
-    }else{
-      res.send(500);
-    }
+    var response = PostMethod.Post(req.body);
+    res.send(response);
      
    
 

@@ -39,16 +39,11 @@ HandleSearch(searchValue){
 
     render() {
       const gnewsdata = this.state.data;
-      console.log(gnewsdata);
       return (
             <section className="cards-wrapper">
                 {
                 gnewsdata.map((gnew, index) => (
-                  <Router>
-                    <Route exact path="/">
-                      <Card title={gnew.title} image={gnew.image} description={gnew.description} publishedAt={gnew.publishedAt} originalUrl={gnew.url}/>
-                    </Route>
-                  </Router>
+                  <Card key={index} title={gnew.title} image={gnew.image} description={gnew.description} publishedAt={gnew.publishedAt} originalUrl={gnew.url}/>
                 ))
                 
                 }
